@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>텀블벅 - 크리에이터를 위한 크라우드 펀딩</title>
+    <link rel="icon" type="image/x-icon" href="/static/image/favicon.ico">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <style>
+        .container {
+            max-width: 560px;
+        }
+        .field-error {
+            border-color: #dc3545;
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="py-5 text-center">
+        <h2>프로젝트 등록</h2>
+    </div>
+    <form method="post" enctype="multipart/form-data">
+        <div>
+            <label for="title">프로젝트명</label>
+            <input type="text" id="title" class="form-control">
+            <div class="field-error"></div>
+        </div>
+        <div>카테고리</div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input">
+            <label class="form-check-label">
+                BOOK
+            </label>
+        </div>
+        <div class="field-error"></div>
+        <div>
+            <label for="mainImage">메인 이미지 (파일 최대크기 : <span></span>)</label>
+            <input type="file" id="mainImage" class="form-control">
+            <div class="field-error"></div>
+        </div>
+        <div>
+            <label for="subImages">서브 이미지 (최대 3장까지 등록 가능, 파일 1개당 최대크기 : <span></span>)</label>
+            <input type="file" multiple="multiple" id="subImages" class="form-control">
+            <div class="field-error"></div>
+        </div>
+        <div>
+            <label for="description">설명</label>
+            <textarea id="description" class="form-control"></textarea>
+            <div class="field-error"></div>
+        </div>
+        <div>
+            <label for="targetSponsorship">목표금액</label>
+            <input type="number" id="targetSponsorship" class="form-control">
+            <div class="field-error"></div>
+        </div>
+        <div>
+            <label for="reward1Price">첫 번째 리워드 가격</label>
+            <input type="number" id="reward1Price" class="form-control">
+            <div class="field-error"></div>
+        </div>
+        <div>
+            <label for="reward1Description">첫 번째 리워드 설명</label>
+            <textarea id="reward1Description" class="form-control"></textarea>
+            <div class="field-error"></div>
+        </div>
+        <div>
+            <label for="reward2Price">두 번째 리워드 가격</label>
+            <input type="number" id="reward2Price" class="form-control">
+            <div class="field-error"></div>
+        </div>
+        <div>
+            <label for="reward2Description">두 번째 리워드 설명</label>
+            <textarea id="reward2Description" class="form-control"></textarea>
+            <div class="field-error"></div>
+        </div>
+        <div>
+            <label for="deadlineDate">마감기한</label>
+            <input type="date" id="deadlineDate" class="form-control">
+            <div class="field-error"></div>
+        </div>
+
+        <hr class="my-4">
+        <div class="row">
+            <div class="col">
+                <button class="w-100 btn btn-primary btn-lg" type="submit">
+                    등록하기
+                </button>
+            </div>
+            <div class="col">
+                <button class="w-100 btn btn-secondary btn-lg" type="button">
+                    취소
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
